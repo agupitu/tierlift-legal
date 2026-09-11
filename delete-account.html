@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TierLift — Delete your account and data</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1d21;
+    --muted: #5b6470;
+    --rule: #e3e7ec;
+    --accent: #0f766e;
+    --card: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0d10;
+      --fg: #e6e9ee;
+      --muted: #9aa4b2;
+      --rule: #232830;
+      --accent: #5eead4;
+      --card: #14181d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.15rem; margin: 2.75rem 0 .75rem; letter-spacing: -.01em;
+    padding-top: 1.25rem; border-top: 1px solid var(--rule);
+  }
+  p, li { margin: 0 0 .85rem; }
+  ul, ol { padding-left: 1.25rem; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); font-size: .9rem; margin-bottom: 2rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 10px;
+    padding: 1rem 1.25rem; margin: 1.25rem 0;
+  }
+  table { border-collapse: collapse; width: 100%; font-size: .94rem; margin: 1rem 0; }
+  th, td { text-align: left; padding: .55rem .65rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  code { background: var(--card); padding: .1rem .35rem; border-radius: 4px; font-size: .92em; }
+  footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Delete your TierLift account and data</h1>
+<p class="meta">TierLift · Android app <code>com.agupitu.TierLift</code> · Last updated 11 September 2026</p>
+
+<p>This page explains how to ask for your TierLift account and the data attached to it to be deleted, what gets deleted, and what is kept.</p>
+
+<h2>How to request deletion</h2>
+<ol>
+  <li>From the email address you use to sign in to TierLift, write to <strong><a href="mailto:platephoenix.design@gmail.com">platephoenix.design@gmail.com</a></strong>.</li>
+  <li>Put <strong>Delete my TierLift account</strong> in the subject line.</li>
+  <li>Include the username shown on your TierLift profile, so the right account is matched.</li>
+</ol>
+<p>The request is confirmed by reply, and the account is deleted within 30 days of receiving it. Sending the request from the address linked to the account is what verifies that the account is yours; no other proof is needed.</p>
+
+<div class="card">
+  The app does not currently have a delete button of its own. Email is the only route, and it is honoured for every account.
+</div>
+
+<h2>What is deleted</h2>
+<ul>
+  <li>Your account and the sign-in link to your Google account.</li>
+  <li>Your email address.</li>
+  <li>Your profile: username, display name, avatar image, reputation score, follower and following counts.</li>
+  <li>Your tier votes on exercises and routines.</li>
+  <li>Your saved exercises and saved routines.</li>
+  <li>The routines you created and their contents.</li>
+  <li>Who you follow and who follows you.</li>
+  <li>Your reputation events and achievements.</li>
+  <li>The content reports you submitted.</li>
+  <li>The photos and videos you uploaded.</li>
+</ul>
+
+<h2>What is kept, and for how long</h2>
+<table>
+  <tr><th>Data</th><th>Kept</th><th>Why</th></tr>
+  <tr>
+    <td>Exercises you published</td>
+    <td>Indefinitely, with your name and profile link removed</td>
+    <td>Other users' routines, saves and tier votes point at them. Deleting them outright would corrupt the community rankings and break other people's routines.</td>
+  </tr>
+  <tr>
+    <td>Aggregated tier scores</td>
+    <td>Indefinitely, with no link to you</td>
+    <td>Ranking totals hold no personal data once your individual vote is removed.</td>
+  </tr>
+  <tr>
+    <td>Server and database backups</td>
+    <td>Up to 30 further days after deletion</td>
+    <td>Backups roll over on a fixed schedule and are then overwritten.</td>
+  </tr>
+</table>
+<p>If you want the exercises you published removed as well, say so in the same email and they are taken down with the rest.</p>
+
+<h2>Deleting some data without deleting your account</h2>
+<p>Routines you created can be deleted inside the app at any time, from the routine's own screen. For anything else, write to the address above describing what you want removed, and it is handled within 30 days.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:platephoenix.design@gmail.com">platephoenix.design@gmail.com</a></p>
+<p>See also the <a href="./">TierLift privacy policy</a>.</p>
+
+<footer>
+TierLift · com.agupitu.TierLift · Account deletion instructions, version of 11 September 2026
+</footer>
+
+</main>
+</body>
+</html>
