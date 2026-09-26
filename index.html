@@ -58,12 +58,12 @@
 <main>
 
 <h1>TierLift — Privacy Policy</h1>
-<p class="meta">Last updated: 11 September 2026 · Applies to the TierLift Android app (<code>com.agupitu.TierLift</code>)</p>
+<p class="meta">Last updated: 25 September 2026 · Applies to the TierLift Android app (<code>com.agupitu.TierLift</code>)</p>
 
 <p>TierLift is a community app where people publish weight-training exercises, rank them into tiers, build routines and follow each other. This policy explains what the app collects, why, who it is shared with, and how to get it deleted.</p>
 
 <div class="card">
-  <strong>The short version.</strong> TierLift asks Google who you are so you can sign in, then stores the content you choose to publish. It runs no advertising, no analytics and no tracking SDKs. Anything you publish — your profile, your exercises, your photos and videos — is public to every other user.
+  <strong>The short version.</strong> TierLift asks Google who you are so you can sign in, then stores the content you choose to publish. The free app shows ads served by Google AdMob, which uses your device's advertising ID; where the law requires it, you are asked for consent first and can change your choice at any time. There are no analytics or crash-reporting SDKs. Anything you publish — your profile, your exercises, your photos and videos — is public to every other user.
 </div>
 
 <h2>1. Who is responsible</h2>
@@ -76,20 +76,23 @@
 <p>Signing in is done exclusively through Google Sign-In. TierLift does not ask for, see or store a password. When you sign in, Google passes on your email address and your Google account identifier, and TierLift stores them to identify your account across sessions.</p>
 
 <h3>2.2 Profile data</h3>
-<p>On first sign-in the app creates a public profile containing a username derived from your email address, a display name, an optional avatar image, a reputation score, and follower and following counts. Your profile is visible to every other user of the app. Your email address is not shown on your profile and is not visible to other users.</p>
+<p>On first sign-in the app creates a public profile containing a username derived from your email address, a display name, an optional avatar image, and follower and following counts. Your profile is visible to every other user of the app. Your email address is not shown on your profile and is not visible to other users.</p>
 
 <h3>2.3 Content you publish</h3>
 <p>Everything you create in the app is stored and shown publicly: exercises and their titles, descriptions and steps, muscle and equipment tags, photos and videos you upload, routines you build, and links to third-party videos you reference.</p>
 
 <h3>2.4 Activity data</h3>
-<p>The app records what you do so the rankings and your library work: the tier you vote for on each exercise and routine, the exercises and routines you save, who you follow, the reputation events and achievements you earn, and any content reports you submit to moderation.</p>
+<p>The app records what you do so the rankings and your library work: the tier you vote for on each exercise and routine, the exercises and routines you save, who you follow, and any content reports you submit to moderation. The tiers you give to exercises are public: anyone, signed in or not, can look up your profile and read your exercise tier list. Your routine votes, your saved exercises and your reports are not public.</p>
 
 <h3>2.5 Data stored on your device</h3>
 <p>The app keeps your session token and a cached copy of recently viewed content in the app's own local storage, so it opens quickly and survives a restart. This data never leaves your device except as part of the normal requests described above, and it is erased when you sign out or uninstall the app.</p>
 
-<h3>2.6 What the app does not collect</h3>
+<h3>2.6 Advertising data</h3>
+<p>The app shows ads inside the Home feed, served by Google AdMob. To choose, deliver and measure those ads, the Google Mobile Ads SDK collects from your device: the advertising ID, IP address, device and app information (model, operating system, app version, language), and ad interactions such as impressions and taps. This data is collected and processed by Google, not stored by TierLift. Read <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses information from apps that use its services</a>.</p>
+<p>If you are in the European Economic Area, the United Kingdom, Switzerland or a US state with a privacy law, the app asks for your consent before any ad is requested, and non-personalized ads are shown if you decline. You can change your choice at any time from <strong>Profile → ⋯ → Ad privacy</strong>. On any Android device you can also reset or delete your advertising ID in <strong>Settings → Privacy → Ads</strong>.</p>
+
+<h3>2.7 What the app does not collect</h3>
 <ul>
-  <li>No advertising identifiers, and no advertising of any kind.</li>
   <li>No analytics, crash-reporting or attribution SDKs.</li>
   <li>No location data.</li>
   <li>No contacts, calendar, call logs or SMS.</li>
@@ -106,12 +109,12 @@
   <tr><td>Email address and Google account identifier</td><td>Authenticate you and keep you signed in</td></tr>
   <tr><td>Profile, username, avatar</td><td>Attribute your contributions and let other users find you</td></tr>
   <tr><td>Exercises, routines, photos, videos</td><td>Show the content you chose to publish</td></tr>
-  <tr><td>Tier votes</td><td>Compute the community ranking of each exercise</td></tr>
+  <tr><td>Tier votes</td><td>Compute the community ranking of each exercise, and show your exercise tier list publicly under your account</td></tr>
   <tr><td>Saves and follows</td><td>Build your personal library and your feed</td></tr>
-  <tr><td>Reputation and achievements</td><td>Weight contributions and reduce abuse</td></tr>
   <tr><td>Reports</td><td>Review content flagged by the community</td></tr>
+  <tr><td>Advertising ID, device information, ad interactions</td><td>Show ads, limit how often they repeat, measure them and prevent ad fraud (processed by Google AdMob)</td></tr>
 </table>
-<p>None of this data is sold, rented, or used to build advertising profiles.</p>
+<p>TierLift does not sell or rent your data. Your account, profile, content and activity data is never passed to advertisers; ads are chosen by Google AdMob using the advertising data described in section 2.6.</p>
 
 <h2>5. Publicly readable media</h2>
 <p>Photos and videos uploaded to TierLift are stored in public storage buckets. This means the file can be opened by anyone who has its direct URL, whether or not they use the app or are signed in. Do not upload anything you would not want to be publicly accessible. Removing an exercise removes it from the app, but a file whose URL was copied and shared elsewhere may remain reachable to whoever holds that URL.</p>
@@ -121,16 +124,18 @@
   <li><strong>Supabase</strong> hosts the database, the file storage and the authentication service behind the app. All account, profile, content and activity data described above is stored there. See the <a href="https://supabase.com/privacy" rel="noopener">Supabase privacy policy</a>.</li>
   <li><strong>Google</strong> provides the sign-in. Google receives the fact that you authenticated with TierLift. See the <a href="https://policies.google.com/privacy" rel="noopener">Google privacy policy</a>.</li>
   <li><strong>YouTube</strong> serves any third-party exercise video that a user linked. Those videos are embedded through <code>youtube-nocookie.com</code>, which does not set tracking cookies until you press play. See the <a href="https://policies.google.com/privacy" rel="noopener">Google privacy policy</a>.</li>
+  <li><strong>Google AdMob</strong> serves the ads in the app and receives the advertising data described in section 2.6. See the <a href="https://policies.google.com/privacy" rel="noopener">Google privacy policy</a> and <a href="https://policies.google.com/technologies/ads" rel="noopener">how Google uses advertising data</a>.</li>
 </ul>
 <p>Data may also be disclosed where a law, a court order or a valid legal request requires it.</p>
 
 <h2>7. Retention</h2>
-<p>Account, profile, content and activity data is kept for as long as your account exists. When an account is deleted, its profile, votes, saves, follows, routines and uploaded media are deleted with it. Exercises you published may be retained without your name attached where other users' routines and votes depend on them, so that the community rankings stay intact.</p>
+<p>Account, profile, content and activity data is kept for as long as your account exists. When an account is deleted, its profile, votes, saves, follows, routines and uploaded media that nothing else uses are deleted with it. Exercises you published stay in the catalog under a public <code>deleted_user</code> profile, so other people's votes, saves and routines keep working and the community rankings stay intact.</p>
 
 <h2>8. Deleting your account and your data</h2>
-<p>The app does not yet include a self-service delete button. Until it does, send a deletion request from the email address linked to your account to:</p>
+<p>In the app, open <strong>Profile</strong>, scroll to the bottom and tap <strong>Delete account</strong>. You will be shown what is deleted and what stays, then asked to type your username to confirm. Deletion is immediate.</p>
+<p>You can also send a deletion request from the email address linked to your account to:</p>
 <p><strong><a href="mailto:platephoenix.design@gmail.com">platephoenix.design@gmail.com</a></strong></p>
-<p>Write "Delete my TierLift account" in the subject line. The account and the data listed in section 7 are deleted within 30 days of the request. You may also request a copy of the data held about you, or a correction of it, at the same address.</p>
+<p>Write "Delete my TierLift account" in the subject line. Email requests are completed within 30 days. You may also request a copy of the data held about you, or a correction of it, at the same address.</p>
 
 <h2>9. Security</h2>
 <p>Traffic between the app and the server travels over HTTPS. Database access is restricted by row-level security rules, so a signed-in user can only modify their own records. No system is perfectly secure, and this policy makes no guarantee that a breach can never happen.</p>
@@ -151,7 +156,7 @@
 <p><a href="mailto:platephoenix.design@gmail.com">platephoenix.design@gmail.com</a></p>
 
 <footer>
-TierLift · com.agupitu.TierLift · Privacy policy, version of 11 September 2026
+TierLift · com.agupitu.TierLift · Privacy policy, version of 25 September 2026
 </footer>
 
 </main>
